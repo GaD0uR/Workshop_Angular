@@ -1,0 +1,63 @@
+<div class="add-movie">
+  <h1 class="add-title">{{ movie_id ? 'Edit ' : 'Add ' }}A Movie</h1>
+  <form [formGroup]="form" class="mt-5">
+    <div class="form-group">
+      <label [class.text-danger]="f.name.errors && isSubmitted">Movie Name</label>
+        <input
+          type="text"
+          name="name"
+          class="form-control"
+          formControlName="name"
+          [class.border-danger]="f.name.errors && isSubmitted"
+          required
+        />
+    </div>
+    <div class="form-group">
+      <label [class.text-danger]="f.date.errors && isSubmitted">Movie Release Date</label>
+
+        <input
+          type="date"
+          name="date"
+          class="form-control"
+          formControlName="date"
+          [class.border-danger]="f.date.errors && isSubmitted"
+          required
+        />
+    </div>
+    <div class="form-group">
+      <label [class.text-danger]="f.image.errors && isSubmitted">Movie Image</label>
+        <input
+          type="url"
+          name="image"
+          class="form-control"
+          formControlName="image"
+          [class.border-danger]="f.image.errors && isSubmitted"
+          required
+        />
+      </div>
+    <div class="form-group">
+      <label [class.text-danger]="f.type.errors && isSubmitted">Movie Type</label>
+        <input
+          type="text"
+          name="type"
+          class="form-control"
+          formControlName="type"
+          [class.border-danger]="f.type.errors && isSubmitted"
+          required
+        />
+    </div>
+    <div class="form-group ">
+      <label [class.text-danger]="f.description.errors && isSubmitted">Movie Summary</label>
+        <textarea
+          name="description"
+          class="form-control"
+          formControlName="description"
+          [class.border-danger]="f.description.errors && isSubmitted"
+          required
+        ></textarea>
+    </div>
+  </form>
+  <button class="btn btn-add" (click)="submit()">
+    Submit
+  </button>
+</div>

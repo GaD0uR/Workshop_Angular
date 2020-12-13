@@ -1,0 +1,103 @@
+.movie-item {
+  height: 550px;
+  overflow: hidden;
+  margin-bottom: 30px;
+  position: relative;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.7);
+}
+
+.movie-item .movie-img {
+  height: 550px;
+}
+
+.movie-item .movie-img img {
+  object-fit: cover;
+  height: 100% !important ;
+  width: 100%;
+}
+
+.movie-item .item-overlay {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.9);
+  display: none;
+}
+
+.movie-item:hover .item-overlay {
+  display: block;
+}
+
+.movie-item .item-overlay .movie-info {
+  position: absolute;
+  padding: 55px 15px;
+  bottom: -100px;
+  color: #ffffff;
+  font-size: 14px;
+}
+
+.movie-item .item-overlay:hover .movie-info {
+  bottom: 0;
+  transition: 0.7s;
+  width: 100%;
+}
+
+.movie-item .item-overlay .movie-info .movie-title {
+  position: relative;
+  font-size: 25px;
+  padding-bottom: 25px;
+}
+
+.movie-item .item-overlay .movie-info .movie-rating {
+  color: gold;
+  font-size: 16px;
+  margin-bottom: 15px;
+}
+
+.movie-item .item-overlay .movie-info .movie-title::before {
+  content: "";
+  width: 70px;
+  height: 3px;
+  background-color: gold;
+  position: absolute;
+  bottom: 15px;
+}
+
+.movie-item .item-overlay .movie-info .movie-description {
+  color: darkgray;
+}
+
+.movie-item .item-overlay .movie-info .movie-more {
+  color: gold;
+  margin-bottom: 25px;
+}
+
+.movie-item .item-overlay .movie-info .movie-btn {
+  border: 2px solid gold;
+  border-radius: 5px;
+  padding: 9px 15px;
+  color: gold;
+  cursor: pointer;
+  text-transform: uppercase;
+  font-weight: 600;
+}
+
+.movie-item .item-overlay .movie-info .movie-btn i {
+  margin-right: 5px;
+}
+
+.ReactModal__Overlay {
+  z-index: 1024;
+  background-color: rgba(0, 0, 0, 0.7) !important;
+}
+
+
+.btn-action {
+  position: absolute;
+  bottom: 5px;
+  right: 15px;
+  cursor: pointer;
+  text-decoration: underline;
+}

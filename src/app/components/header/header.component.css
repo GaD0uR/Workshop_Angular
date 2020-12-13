@@ -1,0 +1,50 @@
+@font-face {
+  font-family: Bangers;
+  src: url("../../../assets/fonts/Bangers-Regular.ttf");
+}
+
+.nav-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  background-color: black;
+  height: 65px;
+  padding-left: 35px;
+  padding-right: 35px;
+  z-index: 1024;
+}
+
+.nav-header .search-content {
+  position: relative;
+}
+
+.nav-header .search-content input {
+  width: 500px;
+}
+
+.nav-header .search-content i {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  color: #333333;
+  cursor: pointer;
+}
+
+.nav-header .header-logo  {
+  color: gold;
+  font-family: Bangers;
+  font-size: 30px;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.nav-header .btn-add {
+  background-color: gold;
+  text-transform: capitalize;
+  width: 120px;
+  font-weight: 600;
+}

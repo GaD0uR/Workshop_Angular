@@ -1,0 +1,23 @@
+<div class="movie-item">
+  <div class="item-overlay">
+    <div class="movie-info">
+      <h1 class="movie-title">{{ movie.name }}</h1>
+      <p class="movie-date-type">
+        {{movie.date | date}} - {{movie.type}}
+      </p>
+      <p class="movie-description">{{movie.description}}</p>
+      <p class="movie-more">Read More</p>
+      <span class="movie-btn" [routerLink]="['/movies', movie.id]">
+        <i class="fa fa-play"></i>
+        Watch trailer
+      </span>
+      <span class="btn-action" (click)="removeMovie(movie.id)">
+        Delete
+      </span>
+    </div>
+  </div>
+  <div class="movie-img">
+    <img [src]="movie.image" alt="" />
+  </div>
+
+</div>

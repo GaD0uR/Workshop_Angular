@@ -1,0 +1,26 @@
+<div class="movie-item">
+
+  <div class="row">
+    <div class="movie-img col-md-4">
+      <img [src]="movie.image" alt="" />
+    </div>
+    <div class="movie-info col-md-8">
+      <h1 class="movie-title">{{ movie.name }}</h1>
+      <p class="movie-date-type">
+        {{movie.date }} - {{movie.type}}
+      </p>
+      <p class="movie-description">{{movie.description}}</p>
+      <p class="movie-more">Read More</p>
+      <span class="movie-btn">
+        <i class="fa fa-play"></i>
+        Watch trailer
+      </span>
+      <div class="btn-action">
+        <a [routerLink]="['/movies/edit', movie.id]">
+        <i class="fa fa-edit"></i>
+        </a>
+        <i class="fa fa-trash-o" (click)="removeMovie(movie.id)"></i>
+      </div>
+    </div>
+  </div>
+</div>

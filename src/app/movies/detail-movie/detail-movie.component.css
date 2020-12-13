@@ -1,0 +1,83 @@
+.movie-item {
+  position: relative;
+  background-color: rgba(0, 0, 0, 0.8);}
+
+.movie-item .movie-img {
+  height: 550px;
+}
+
+.movie-item .movie-img img {
+  object-fit: cover;
+  height: 100% !important ;
+  width: 100%;
+}
+
+.movie-item .movie-info {
+  color: #ffffff;
+  padding: 55px 30px;
+  font-size: 14px;
+}
+
+.movie-item .movie-info .movie-title {
+  position: relative;
+  font-size: 25px;
+  padding-bottom: 25px;
+}
+
+.movie-item .movie-info .movie-rating {
+  color: gold;
+  font-size: 16px;
+  margin-bottom: 15px;
+}
+
+.movie-item .movie-info .movie-title::before {
+  content: "";
+  width: 70px;
+  height: 3px;
+  background-color: gold;
+  position: absolute;
+  bottom: 15px;
+}
+
+.movie-item .movie-info .movie-description {
+  color: darkgray;
+}
+
+.movie-item .movie-info .movie-more {
+  color: gold;
+  margin-bottom: 25px;
+}
+
+.movie-item  .movie-info .movie-btn {
+  border: 2px solid gold;
+  border-radius: 5px;
+  padding: 9px 15px;
+  color: gold;
+  cursor: pointer;
+  text-transform: uppercase;
+  font-weight: 600;
+}
+
+.movie-item .movie-info .movie-btn i {
+  margin-right: 5px;
+}
+
+.btn-action {
+  display: flex;
+  align-items: center;
+  position: absolute;
+  right: 30px;
+  bottom: 30px;
+}
+
+.btn-action a {
+  padding-top: 6px;
+  display: inline-block;
+  color: #ffffff;
+}
+
+.btn-action .fa {
+  cursor: pointer;
+  font-size: 25px;
+  padding-left: 15px;
+}

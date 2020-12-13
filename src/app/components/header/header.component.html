@@ -1,0 +1,17 @@
+<div class="nav-header">
+  <a class="header-logo" routerLink='/movies'>
+    Gadour TV
+  </a>
+  <div class="search-content">
+    <input
+      type="text"
+      placeholder="Movie name..."
+      class="form-control"
+      [(ngModel)]="search"
+    />
+    <a [routerLink]="['/movies']" [queryParams]="{ q: search}"><i class="fa fa-search" ></i></a>
+  </div>
+  <button class="btn btn-add" routerLink="/movies/add">
+    <i class="fa fa-plus"></i> movie
+  </button>
+</div>
